@@ -1,4 +1,4 @@
-﻿module EchoGrain
+﻿module HttpGrain
 
 open System
 open System.Threading.Tasks
@@ -7,7 +7,7 @@ open OrleansGrainsInterfaces
 open System.Net.Http
 open FSharpx.Task
 
-type EchoServer() = 
+type HttpGrain() = 
     inherit Orleans.Grain()
     interface IHttpGrain with
         override this.Get(uri:Uri) =

@@ -1,8 +1,4 @@
-﻿// Learn more about F# at http://fsharp.net
-// See the 'F# Tutorial' project for more help.
-
-module Echo
-open System;
+﻿open System;
 open Orleans.Runtime.Host;
 open OrleansGrainsInterfaces;
 

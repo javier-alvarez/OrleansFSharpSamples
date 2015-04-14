@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "OrleansClient", "OrleansFSharpSamples\OrleansClient.fsproj", "{317C3304-7F6C-413B-89FA-0E507EA8EDE0}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "OrleansClient", "OrleansClient\OrleansClient.fsproj", "{317C3304-7F6C-413B-89FA-0E507EA8EDE0}"
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "OrleansServer", "OrleansServer\OrleansServer.fsproj", "{CB46653A-E55D-4E89-99C9-71331DD4D6D2}"
 EndProject

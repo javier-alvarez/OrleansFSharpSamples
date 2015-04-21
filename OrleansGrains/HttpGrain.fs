@@ -24,13 +24,13 @@ type HttpGrain() =
             if (counter % 10 = 0) then raise (System.Exception("Multiple of 10!"))
             task {
 
-                let ts1 = TaskScheduler.Current; // Grabs the Orleans task scheduler
-                assert ts1.GetType().Namespace.StartsWith("Orleans")
+                let ts1 = TaskScheduler.Current; // Grab the current TPL task scheduler
+                assert ts1.GetType().Namespace.StartsWith("Orleans") // Check that it is indeed an Orleans scheduler
                 let! _ = Task.Delay(100) |> Ignore
 
                 // check the scheduler
-                let ts2 = TaskScheduler.Current; // Grabs the Orleans task scheduler
-                assert ts2.GetType().Namespace.StartsWith("Orleans")
+                let ts2 = TaskScheduler.Current; // Grab the current TPL task scheduler
+                assert ts2.GetType().Namespace.StartsWith("Orleans") // Check that it is indeed still an Orleans scheduler
 
                 assert (ts1=ts2)
 

@@ -26,7 +26,7 @@ type HttpGrain() =
 
                 let ts1 = TaskScheduler.Current; // Grabs the Orleans task scheduler
                 assert ts1.GetType().Namespace.StartsWith("Orleans")
-                let! _ = Task.Delay(100) |> Ignore
+                let! _ = Task.Delay(2000) |> Ignore
 
                 // check the scheduler
                 let ts2 = TaskScheduler.Current; // Grabs the Orleans task scheduler
